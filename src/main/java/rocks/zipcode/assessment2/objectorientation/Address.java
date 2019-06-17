@@ -4,13 +4,18 @@ package rocks.zipcode.assessment2.objectorientation;
  * @author leon on 28/11/2018.
  */
 public class Address {
-   protected String addressLine1 = "";
-   protected String addressLine2 = "";
-   protected String city = "";
-   protected String state = "";
-   protected String zipcode = "";
+   protected String addressLine1;
+   protected String addressLine2;
+   protected String city;
+   protected String state;
+   protected String zipcode;
 
     public Address() {
+        addressLine1 = "";
+        addressLine2 = "";
+        city = "";
+        state = "";
+        zipcode = "";
     }
 
     /**

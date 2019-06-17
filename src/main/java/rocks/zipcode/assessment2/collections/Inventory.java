@@ -22,13 +22,14 @@ public class Inventory {
     }
 
 
-    HashMap<String, String > inventory = new HashMap<>();
+    HashMap<String , Integer> inventoryList = new HashMap<>();
 
     /**
      * @param item - increment the number of this item in stock by 1
      */
     public void addItemToInventory(String item) {
-        return; // inventory.put(item, ) ;
+        inventoryList.put(item, 1);
+        inventoryList.put(item, 1 + 1);
     }
 
     /**

@@ -10,6 +10,11 @@ public class Person {
      * @param name - name of person
      * @param address - address of person
      */
+
+    protected Long id;
+    protected String name;
+    protected Address address;
+
     public Person(Long id, String name, Address address) {
     }
 
