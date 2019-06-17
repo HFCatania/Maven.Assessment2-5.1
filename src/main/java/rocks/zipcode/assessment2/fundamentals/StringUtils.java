@@ -1,5 +1,7 @@
 package rocks.zipcode.assessment2.fundamentals;
 
+import java.util.Collections;
+
 /**
  * @author leon on 28/11/2018.
  */
@@ -10,7 +12,7 @@ public class StringUtils {
      * @return `stringToBePadded` flushed right by left-padding
      */
     public static String padLeft(String stringToBePadded, int amountOfPadding) {
-        return null;
+        return String.format("%1$" + amountOfPadding + "s", stringToBePadded);
     }
 
     /**
@@ -19,7 +21,7 @@ public class StringUtils {
      * @return `stringToBePadded` flushed right by right-padding
      */
     public static String padRight(String stringToBePadded, int amountOfPadding) {
-        return null;
+        return String.format("%1$-" + amountOfPadding + "s", stringToBePadded);
     }
 
     /**
@@ -28,7 +30,8 @@ public class StringUtils {
      * @return the string repeated and concatenated `n` times
      */
     public static String repeatString(String stringToBeRepeated, int numberOfTimeToRepeat) {
-        return null;
+        String result = String.join("", Collections.nCopies(numberOfTimeToRepeat, stringToBeRepeated));
+        return result;
     }
 
     /**
@@ -36,7 +39,7 @@ public class StringUtils {
      * @return - true if string only contains alpha characters
      */
     public static Boolean isAlphaString(String string) {
-        return null;
+        return string.matches("^[ a-zA-Z]*$");
     }
 
     /**
@@ -44,7 +47,7 @@ public class StringUtils {
      * @return - true if string only contains numeric characters
      */
     public static Boolean isNumericString(String string) {
-        return null;
+        return string.matches("-?\\d+(\\.\\d+)?");
     }
 
     /**
@@ -52,6 +55,7 @@ public class StringUtils {
      * @return - true if string only contains special characters
      */
     public static Boolean isSpecialCharacterString(String string) {
-        return null;
+        String specChar = "!&*/(";
+        return string.matches("[$&+,:;=?@#|'<>.^*()%!-]");
     }
 }

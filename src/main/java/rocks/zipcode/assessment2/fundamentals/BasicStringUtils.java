@@ -1,5 +1,9 @@
 package rocks.zipcode.assessment2.fundamentals;
 
+
+import com.sun.tools.javac.util.ArrayUtils;
+import org.apache.commons.lang3.*;
+
 public class BasicStringUtils {
     /**
      * @param string1 - Base string to be added to
@@ -39,10 +43,21 @@ public class BasicStringUtils {
      */
     public static String removeCharacters(String string, String charactersToRemove) {
 
-        String newString = string.replaceAll(charactersToRemove, "");
-        String newString2 = newString.replaceAll(charactersToRemove, "");
-        String result = newString2.replaceAll(charactersToRemove, "");
-        return result;
+//
+//        String str[] = string.split("");
+//        String str2[] = charactersToRemove.split("");
+//        ArrayList<String> =
+//        for (int i = 0; i < charArray.length; i++) {
+//            for (int j = 0; j < charArray2.length; j++) {
+//                if(charArray[i] != charArray2[j]){
+//
+//                }
+//            }
+//        }
+//        String newString = string.replaceAll(charactersToRemove, "");
+//        String newString2 = newString.replaceAll(charactersToRemove, "");
+//        String result = newString2.replaceAll(charactersToRemove, "");
+        return null;
     }
 
     /**
