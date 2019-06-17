@@ -12,7 +12,7 @@ public class Shelter<_> {
     public Shelter() {
         throw new NullPointerException();
     }
-
+    Shelter<Object> test = new Shelter<>();
     /**
      * @return the number of item in the shelter
      */
@@ -21,20 +21,23 @@ public class Shelter<_> {
     }
 
     public void add(Object object) {
+        test.add(object);
+
     }
 
     public Boolean contains(Object object) {
-        return null;
+        return test.contains(object);
     }
 
     public void remove(Object object) {
+        test.remove(object);
     }
 
     public Object get(Integer index) {
-        return null;
+        return test.get(index);
     }
 
     public Integer getIndexOf(Object ageable) {
-        return 0;
+        return test.getIndexOf(ageable);
     }
 }
